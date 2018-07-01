@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:menu="menu_add">
+    
+    <data>
+        <variable
+            name="entry"
+            type="com.knexno.sudo.log.RecyclerView.Entry"/>
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/card_view_dimen"
+            app:cardCornerRadius="@dimen/card_view_dimen"
+            android:layout_margin="@dimen/card_view_dimen">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/heading_text"
+                        android:layout_width="0dp"
+                        style="@style/headingEditText"
+                        android:layout_weight="3.8"
+                        android:hint="@string/heading_hint"
+                        android:text="@{entry.heading}"/>
+
+                    <TextView
+                        android:id="@+id/date_text"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
+                        style="@style/dateTextStyle"
+                        android:text="@{entry.date}" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/body_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/bodyEditText"
+                    android:hint="@string/body_hint"
+                    android:text="@{entry.body}"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+
+
+</layout>

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Log</string>
+
+    <!--main menu-->
+    <string name="add">Add</string>
+    <string name="search">Search</string>
+
+    <!--edit/add activity-->
+    <string name="heading_hint">Heading</string>
+    <string name="body_hint">Body</string>
+    <string name="entry_saved">Entry saved</string>
+    <string name="add_entry">New Entry</string>
+    <string name="edit_entry">Edit Entry</string>
+
+    <!--edit menu-->
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+
+    <!--add menu-->
+    <string name="done">Done</string>
+
+    <!--main activity-->
+    <string name="no_connection">No Internet Connection</string>
+    <string name="welcome">Welcome to Journals</string>
+    <string name="add_new_entry">Add New Connection</string>
+
+    <!--error messages-->
+    <string name="database_error">Error getting entry</string>
+    <string name="deleting_error">Error deleting entry</string>
+    <string name="adding_error">Error adding entry</string>
+
+    <!--dialogs-->
+    <string name="cancel">Cancel</string>
+
+    <!--discard-->
+    <string name="discard_title">Discard changes</string>
+    <string name="discard_message">Changes have been made. Continuing will discard your changes</string>
+    <string name="discard_positive">Discard Changes</string>
+
+    <!--delete-->
+    <string name="delete_title">Delete Entry</string>
+    <string name="delete_message">Are you sure you want to delete this entry</string>
+    <string name="delete_positive">Delete Entry</string>
+
+    <!--log out-->
+    <string name="logout_title">Confirm Logout</string>
+    <string name="logout_message">Are you sure you want to Logout</string>
+    <string name="logout_positive">Logout</string>
+
+</resources>
